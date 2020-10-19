@@ -5,7 +5,7 @@ var cwd = process.cwd() + '/';
 var primaryDir = path.normalize(cwd + "../../");
 var appDir = primaryDir + 'src/';
 
-if(!fs.Folder.exists(appDir))
+if(!fs.existsSync(appDir))
   appDir = primaryDir + 'app/';
 
 var fontFileName = 'MaterialIcons-Regular.ttf';
